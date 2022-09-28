@@ -15,6 +15,7 @@ module.exports = function(grunt){
 
   });
 
+  //this installs the database 
   grunt.registerTask("installDb", function(){
     var done = this.async();
     db.connect({db : "membership"}, function(err,db){
